@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #222222;
+  height: 350vh;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 400px;
+  height: 100%;
+  background: #2a2a2a;
+}
+
+.wrapper .content {
+  height: 150vh;
+}
+
+.wrapper .content__text {
+  font-size: 36px;
+  font-weight: 600;
+  color: #dfdfdf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .content__text .gear {
+  position: fixed;
+  top: 95px;
+  left: calc(50%-48px);
+  -webkit-animation-name: rotation-gear;
+          animation-name: rotation-gear;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotation-gear {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation-gear {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotation-gear-scroll {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+}
+
+@keyframes rotation-gear-scroll {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+}
+
+.wrapper .point {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+.wrapper button {
+  position: fixed;
+  bottom: 0;
+  width: 400px;
+  height: 55px;
+  background: #ff9b17;
+  border: 0;
+  outline: none;
+  font-size: 32px;
+  font-weight: 600;
+  color: #2a2a2a;
+  cursor: pointer;
+}
+
+.wrapper button:hover {
+  background: #f78d00;
+}
+
+.wrapper button:active {
+  background: #e38100;
+}

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(34, 34, 34);
+    height: 350vh;
+}
+
+
+.wrapper{
+    margin: 0 auto;
+    width: 400px;
+    height: 100%;
+    background: rgb(42, 42, 42);
+    .content{
+        height: 150vh;
+
+        &__text{
+            font-size: 36px;
+            font-weight: 600;
+            color: rgb(223, 223, 223);
+            display:flex;
+                    justify-content:center;
+            .gear{
+                position: fixed;
+                top:95px;
+                left:calc(50%-48px);
+                
+                animation-name: rotation-gear;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @keyframes rotation-gear {
+                0% {
+                    transform:rotate(0deg);
+                }
+                100% {
+                    transform:rotate(360deg);
+                }
+            }
+            @keyframes rotation-gear-scroll {
+                0% {
+                    transform:rotate(0deg);
+                }
+                100% {
+                    transform:rotate(1080deg);
+                }
+            }
+        }
+    }
+    .point{
+        font-size: 32px;
+        font-weight: 600;
+        color: #ffffff;
+        text-align: center;
+    }
+    button{
+        position: fixed;
+        bottom: 0;
+        width: 400px;
+        height: 55px;
+        background: rgb(255, 155, 23);
+        border: 0;
+        outline: none;
+
+        font-size: 32px;
+        font-weight: 600;
+        color: rgb(42, 42, 42);
+
+        cursor: pointer;
+        &:hover{
+            background: darken(rgb(255, 155, 23), 6%);
+        }
+        &:active{
+            background: darken(rgb(255, 155, 23), 10%);
+        }
+    }
+
+}
