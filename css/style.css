@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: #222222;
   height: 350vh;
 }
@@ -15,7 +15,8 @@ body {
   margin: 0 auto;
   width: 400px;
   height: 100%;
-  background: #2a2a2a;
+  background: -webkit-gradient(linear, left top, left bottom, from(#292929), to(#4d4d4d));
+  background: linear-gradient(#292929, #4d4d4d);
 }
 
 .wrapper .content {
@@ -74,10 +75,12 @@ body {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    top: -95px;
   }
   100% {
     -webkit-transform: rotate(1080deg);
             transform: rotate(1080deg);
+    top: 95px;
   }
 }
 
@@ -85,10 +88,12 @@ body {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    top: -95px;
   }
   100% {
     -webkit-transform: rotate(1080deg);
             transform: rotate(1080deg);
+    top: 95px;
   }
 }
 
